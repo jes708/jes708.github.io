@@ -1,1 +1,76 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The World's Greatest Guessing Game™</title>
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="js/guessingGame.js"></script>
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Signika:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <h2 class="center">The World's Greatest Guessing Game™</h2>
+      </div>
+    </header>
+    <main class="container">
+      <section id="intro">
+        <h3>Where am I?</h3>
+        <p>Congratulations! You have joined an elite class of ladies and gentlemen who have had the good fortune of stumbling upon <strong>The World's Greatest Guessing Game™!</strong> To get started, enter a number into the input box, and try to guess what number I am thinking of.  If you guess correctly, you will win one of <strong>The World's Greatest Guessing Game™'s World's Greatest Prizes®!</strong></p>
+      </section> <!--intro-->
+      <section id="game">
+        <h3 class="center">Your Whole Life has been Leading Up to This Moment...</h3>
+        <div class="center-scrunch">
+          <div class="input-group">
+            <input type="text" placeholder="Enter a number between 1 and 100" id="guessInput" class="input-lg form-control">
+          </div>
+          <div class="input-group-btn">
+            <button type="button" id="guessSubmit" class="btn btn-lg btn-secondary btn-danger btn-spacer">Submit Guess</button>
+          </div>
+          <div id="checkMessage">
+          </div>
+          <div id="aux-btns">
+            <button type="button" id="playAgain" class="btn btn-lg btn-secondary btn-success">Reset</button>
+            <button type="button" id="hint" class="btn btn-lg btn-secondary btn-warning">Hint</button>
+            <h3 id="guessCount">Guesses Remaining: 10</h3>
+          </div>
+        </div>
+      </section> <!--game-->
+      <section id="prize">
+        <h3 class="center">The World's Greatest Prize®</h3>
+        <div id="prizeImg" class="center-scrunch-sm">
+          <img src="images/mystery.jpg">
+        </div>
+      </section> <!--prize-->
+      <section id="history">
+        <h3 class="center">Your Guesses</h3>
+        <div id="guessList"></div>
+      </section> <!--history-->
+    </main>
+    </div>
+    <footer>
+      <div class="container">
+        &copy; 2016 Jonathan Schwarz. Don't even think about copying this. All Rights Reserved. 
+      </div>
+    </footer>
+  </body>
+</html>
